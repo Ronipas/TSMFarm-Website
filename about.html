@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Agricultural Products Supplier</title>
+
+    <meta
+      name="description"
+      content="About PT. Tani Sumber Makmur is an agricultural supply and distribution company committed to delivering premium-quality farm products. With strong relationships with local farmers and a strict quality control system, we provide fresh, reliable, and high-standard agricultural commodities for both domestic and international markets"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body class="font-[Poppins]">
+    <!-- NAVBAR -->
+    <header
+      class="fixed md:static top-0 left-0 w-full z-50 transition-shadow duration-300 py-2"
+    >
+      <!-- BACKGROUND -->
+
+      <!-- NAVBAR WRAPPER -->
+      <div
+        id="navbar"
+        class="md:static fixed top-0 w-full z-50 transition-all duration-300"
+      >
+        <nav
+          class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20 shadow-lg backdrop-blur-md md:rounded-full"
+        >
+          <!-- LOGO -->
+          <img class="w-[25vh]" src="assets/logo.png" alt="Logo" />
+
+          <!-- MENU DESKTOP -->
+          <ul
+            class="hidden md:flex items-center gap-10 text-gray-900 font-medium rounded-full"
+          >
+            <li>
+              <a href="index.html" class="hover:text-[#177015]"> Home </a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-[#00bf1a] font-bold hover:text-gray-900 transition"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="product.html" class="hover:text-[#177015]">Product</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-[#177015]">Contact</a>
+            </li>
+          </ul>
+
+          <!-- RIGHT -->
+          <div class="flex items-center gap-5">
+            <button
+              class="hidden md:block bg-[#177015] text-white px-5 py-2 rounded-full hover:bg-[#2c9943] transition"
+            >
+              Get Started
+            </button>
+
+            <!-- HAMBURGER -->
+            <ion-icon
+              id="menuBtn"
+              name="menu"
+              class="text-3xl cursor-pointer md:hidden"
+            ></ion-icon>
+          </div>
+        </nav>
+
+        <!-- MENU MOBILE -->
+        <div
+          id="mobileMenu"
+          class="md:hidden absolute top-17 w-full bg-white/90 shadow-lg opacity-0 invisible -translate-y-3 transition-all duration-300"
+        >
+          <ul class="flex flex-col gap-6 px-6 py-6 text-gray-700 font-medium">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <button
+              class="mt-4 bg-[#177015] text-white px-5 py-2 rounded-full hover:bg-[#2c9943]"
+            >
+              Get Started
+            </button>
+          </ul>
+        </div>
+      </div>
+
+      <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+          const isOpen = !mobileMenu.classList.contains("opacity-0");
+
+          menuBtn.name = isOpen ? "menu" : "close";
+
+          mobileMenu.classList.toggle("opacity-0");
+          mobileMenu.classList.toggle("invisible");
+          mobileMenu.classList.toggle("-translate-y-3");
+        });
+      </script>
+    </header>
+
+    <div class="bg-white min-h-screen flex items-center justify-center p-4">
+      <section
+        class="py-20"
+        x-data="{ inView: false }"
+        x-init="setTimeout(() => inView = true, 500)"
+      >
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mb-16 text-center mt-10 md:mt-0">
+            <div
+              :class="{ 'opacity-100 translate-y-0': inView, 'opacity-0 translate-y-8': !inView }"
+              class="transition-all duration-1000 ease-out"
+            >
+              <h2 class="mb-4 text-4xl font-bold text-[#188308] sm:text-5xl">
+                About Our Company
+              </h2>
+              <p class="mx-auto text-xl text-gray-600">
+                We're passionate about creating innovative solutions that help
+                businesses thrive in the digital age.
+              </p>
+            </div>
+          </div>
+          <div class="items-center grid gap-16 mb-20 lg:grid-cols-2">
+            <div class="space-y-8">
+              <div
+                :class="{ 'opacity-100 translate-y-0': inView, 'opacity-0 translate-y-8': !inView }"
+                class="transition-all duration-1000 ease-out delay-200"
+              >
+                <h3 class="mb-6 text-3xl font-bold text-[#188308]">
+                  Trusted Provider of High-Quality Agricultural Products
+                </h3>
+                <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+                  Tani Sumber Makmur is an agricultural supply and distribution
+                  company committed to delivering premium-quality farm products.
+                  With strong relationships with local farmers and a strict
+                  quality control system, we provide fresh, reliable, and
+                  high-standard agricultural commodities for both domestic and
+                  international markets
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed d">
+                  Our dedication to consistency, quality, and trusted service
+                  makes Tani Sumber Makmur a preferred partner in the
+                  agricultural supply chain
+                </p>
+              </div>
+              <!-- This is the line that was changed -->
+              <div
+                :class="{ 'opacity-100 translate-y-0': inView, 'opacity-0 translate-y-8': !inView }"
+                class="transition-all duration-1000 ease-out delay-200"
+              >
+                <div class="space-y-4">
+                  <div class="items-start space-x-4 rtl:space-x-reverse flex">
+                    <div
+                      class="flex-shrink-0 items-center justify-center flex w-[32px] h-[32px] rounded-full bg-gray-800"
+                    >
+                      <svg
+                        class="w-[16px] h-[16px] text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewbox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="text-lg font-semibold text-[#188308]">
+                        Professional
+                      </h4>
+                      <p class="text-gray-700">
+                        We are very professional in this field with 10+ years
+                        experience
+                      </p>
+                    </div>
+                  </div>
+                  <div class="items-start space-x-4 rtl:space-x-reverse flex">
+                    <div
+                      class="flex-shrink-0 items-center justify-center flex w-[32px] h-[32px] rounded-full bg-gray-800"
+                    >
+                      <svg
+                        class="w-[16px] h-[16px] text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewbox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="text-lg font-semibold text-[#188308]">
+                        Global Reach
+                      </h4>
+                      <p class="text-gray-700">
+                        Ekspor products across 6+ countries worldwide
+                      </p>
+                    </div>
+                  </div>
+                  <div class="items-start space-x-4 rtl:space-x-reverse flex">
+                    <div
+                      class="flex-shrink-0 items-center justify-center flex w-[32px] h-[32px] rounded-full bg-gray-800"
+                    >
+                      <svg
+                        class="w-[16px] h-[16px] text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewbox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="text-lg font-semibold text-[#188308]">
+                        High Quality
+                      </h4>
+                      <p class="text-gray-700">
+                        Ensure consistent quality, food safety, and export
+                        readiness for international markets.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                :class="{ 'opacity-100 scale-100': inView, 'opacity-0 scale-95': !inView }"
+                class="transition-all duration-1000 ease-out delay-300"
+              >
+                <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+                  <img
+                    src="assets/Kentang1.jpg"
+                    alt="Our team at work"
+                    class="object-cover w-full h-[384px]"
+                  />
+                  <div class="absolute bottom-6 left-6 right-6">
+                    <div
+                      class="backdrop-blur-sm p-6 rounded-xl shadow-lg bg-gray-800/80"
+                    >
+                      <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                          <div
+                            class="text-2xl font-bold text-gray-900 dark:text-white"
+                          >
+                            10+
+                          </div>
+                          <div class="text-sm text-gray-600 dark:text-gray-400">
+                            Years
+                          </div>
+                        </div>
+                        <div>
+                          <div
+                            class="text-2xl font-bold text-gray-900 dark:text-white"
+                          >
+                            20+
+                          </div>
+                          <div class="text-sm text-gray-600 dark:text-gray-400">
+                            Team
+                          </div>
+                        </div>
+                        <div>
+                          <div
+                            class="text-2xl font-bold text-gray-900 dark:text-white"
+                          >
+                            6+
+                          </div>
+                          <div class="text-sm text-gray-600 dark:text-gray-400">
+                            Countries
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-7xl mx-auto px-2">
+        <!-- Judul -->
+        <div class="text-center mb-14">
+          <h2 class="text-4xl font-bold text-gray-800">Vision & Mission</h2>
+          <p class="text-gray-600 mt-3">
+            Our company is committed to excellence and sustainable growth. The
+            following vision and mission reflect our dedication to delivering
+            quality products, fostering innovation, and creating meaningful
+            value for our customers and community.
+          </p>
+        </div>
+
+        <!-- Konten -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- VISI -->
+          <div
+            class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 font-bold text-xl"
+              >
+                V
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800">Vision</h3>
+            </div>
+
+            <p class="text-gray-600 leading-relaxed text-center py-5">
+              To become a trusted provider of high-quality agricultural products
+              that deliver sustainable value to customers and the agricultural
+              industry
+            </p>
+          </div>
+
+          <!-- MISI -->
+          <div
+            class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 font-bold text-xl"
+              >
+                M
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800">Mission</h3>
+            </div>
+
+            <ul
+              class="space-y-3 text-gray-600 leading-relaxed list-disc px-5 py-5"
+            >
+              <li>
+                Provide superior-quality agricultural products through rigorous
+                selection and quality control
+              </li>
+              <li>
+                Build long-term and mutually beneficial partnerships with local
+                farmers
+              </li>
+              <li>
+                Enhance supply chain efficiency to ensure products remain fresh
+                and reach customers on time
+              </li>
+              <li>
+                Promote Indonesian agricultural products to compete and grow in
+                global markets
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative text-gray-700 body-font">
+      <!-- Background image -->
+      <div class="absolute inset-0">
+        <img
+          src="assets/foto2.jpg"
+          class="w-full h-full object-cover"
+          alt="Background"
+        />
+        <!-- Overlay hitam transparan -->
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <!-- Konten -->
+      <div class="relative z-10">
+        <div class="flex justify-center text-4xl font-regular text-white pt-10">
+          Why Choose Us?
+        </div>
+
+        <div class="container px-4 sm:px-6 md:px-8 mx-auto py-12">
+          <div class="flex flex-wrap justify-center text-center">
+            <!-- ITEM -->
+            <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+              <div class="px-4 py-6 transition duration-500 hover:scale-110">
+                <div class="flex justify-center">
+                  <img
+                    src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp"
+                    class="w-20 mb-3"
+                  />
+                </div>
+                <h2 class="text-[18px] text-white">
+                  Export Hight-Quality Products
+                </h2>
+              </div>
+            </div>
+
+            <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+              <div class="px-4 py-6 transition duration-500 hover:scale-110">
+                <div class="flex justify-center">
+                  <img
+                    src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp"
+                    class="w-20 mb-3"
+                  />
+                </div>
+                <h2 class="text-[18px] text-white">Reliable Supply Chain</h2>
+              </div>
+            </div>
+
+            <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+              <div class="px-4 py-6 transition duration-500 hover:scale-110">
+                <div class="flex justify-center">
+                  <img src="assets/price.png" class="w-16 mb-3" />
+                </div>
+                <h2 class="text-[18px] text-white">Competitive Pricing</h2>
+              </div>
+            </div>
+
+            <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+              <div class="px-4 py-6 transition duration-500 hover:scale-110">
+                <div class="flex justify-center">
+                  <img
+                    src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp"
+                    class="w-20 mb-3"
+                  />
+                </div>
+                <h2 class="text-[18px] text-white">
+                  Fast Response & Easy Communication
+                </h2>
+              </div>
+            </div>
+
+            <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+              <div class="px-4 py-6 transition duration-500 hover:scale-110">
+                <div class="flex justify-center">
+                  <img
+                    src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp"
+                    class="w-20 mb-3"
+                  />
+                </div>
+                <h2 class="text-[18px] text-white">
+                  Professional Export Handling
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-white py-24 space-y-32">
+      <!-- SECTION 1 -->
+      <section
+        class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Text -->
+        <div>
+          <span
+            class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-300"
+          >
+            <img src="assets/control.svg" alt="" />
+          </span>
+
+          <h2 class="mt-6 text-3xl font-bold tracking-tight text-[#188308]">
+            Customer Segments
+          </h2>
+
+          <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+            - Food distributors & wholesalers <br />
+            - Hotels, restaurants, and cafés (HORECA) <br />
+            - Food processing industries <br />
+            - Retailers and trading companies <br />
+            - Exporters <br />
+            - International buyers (on request)
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div>
+          <img
+            src="assets/segment.png"
+            class="w-full rounded-xl shadow-xl ring-1 ring-black/5"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section
+        class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Text -->
+        <div class="lg:order-2">
+          <span
+            class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-300"
+          >
+            <img src="assets/packing.svg" alt="" />
+          </span>
+
+          <h2 class="mt-6 text-3xl font-bold tracking-tight text-[#188308]">
+            Packaging Options
+          </h2>
+
+          <p class="mt-4 text-lg text-gray-700">
+            We offer several packaging formats based on buyer requirements:
+          </p>
+
+          <ul class="mt-4 text-lg text-gray-700 list-disc list-inside">
+            <li>10 kg / 20 kg mesh bag</li>
+            <li>10 kg / 20 kg PP bag</li>
+            <li>Carton box packaging</li>
+            <li>Custom packaging (OEM) for large orders</li>
+          </ul>
+        </div>
+
+        <!-- Image -->
+        <div class="lg:order-1">
+          <img
+            src="assets/packing.jpeg"
+            class="w-full rounded-xl shadow-xl ring-1 ring-black/5"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- SECTION 3   -->
+      <section
+        class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Text -->
+        <div>
+          <span
+            class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-300"
+          >
+            <img src="assets/supply.svg" alt="" />
+          </span>
+
+          <h2 class="mt-6 text-3xl font-bold tracking-tight text-[#188308]">
+            Minimum Order & Supply Capacity
+          </h2>
+
+          <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+            - <strong>MOQ:</strong> 1 × 20 ft container (mixed products allowed)
+            <br />
+            - <strong>Monthly capacity:</strong> Up to 50 containers (seasonal)
+            <br />
+            - <strong>Production schedule:</strong> Weekly loading available
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div>
+          <img
+            src="assets/moq.png"
+            class="w-full rounded-xl shadow-xl ring-1 ring-black/5"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/6281316907299"
+    target="_blank"
+    aria-label="Contact us via WhatsApp"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-0 transition-all duration-300 hover:scale-105"
+  >
+    <!-- WhatsApp Button (lebih besar) -->
+    <span
+      class="flex items-center justify-center w-14 h-14 bg-green-600 rounded-full shadow-lg"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        fill="white"
+        class="w-10 h-10 sm:w-9 sm:h-9"
+      >
+        <path
+          d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333 0 2.347.64 4.64 1.853 6.64L2 30l7.56-2.453a13.267 13.267 0 0 0 6.44 1.653c7.36 0 13.333-5.973 13.333-13.333S23.36 2.667 16 2.667Zm0 24c-2.08 0-4.107-.533-5.893-1.56l-.427-.253-4.48 1.453 1.467-4.373-.28-.453A10.547 10.547 0 0 1 5.333 16C5.333 10.493 10.493 5.333 16 5.333S26.667 10.493 26.667 16 21.507 26.667 16 26.667Zm5.973-7.227c-.32-.16-1.893-.933-2.187-1.04-.293-.107-.507-.16-.72.16-.213.32-.827 1.04-1.013 1.253-.187.213-.373.24-.693.08-.32-.16-1.347-.493-2.56-1.573-.947-.84-1.587-1.88-1.773-2.2-.187-.32-.02-.493.14-.653.147-.147.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.733-.987-2.373-.26-.627-.52-.54-.72-.547h-.613c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.667 0 1.573 1.147 3.093 1.307 3.307.16.213 2.253 3.44 5.453 4.827.76.327 1.353.52 1.813.667.76.24 1.453.207 2 .127.613-.093 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373Z"
+        />
+      </svg>
+    </span>
+  </a>
+
+  <footer class="flex flex-col space-y-10 justify-center bg-gray-200 w-full">
+    <nav
+      class="flex justify-center flex-wrap gap-6 text-gray-900 font-medium mt-20"
+    >
+      <a class="hover:text-gray-900" href="index.html">Home</a>
+      <a class="hover:text-gray-900" href="about.html">About</a>
+      <a class="hover:text-gray-900" href="product.html">Product</a>
+
+      <a class="hover:text-gray-900" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="flex justify-center space-x-5">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png"
+        />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+      </a>
+    </div>
+    <div class="text-center text-gray-900 font-light">
+      <p class="text-sm">&copy; 2025 PT. TANI SUMBER MAKMUR</p>
+
+      <p class="text-sm">
+        All rights reservered by
+        <a href="mekarweb.com"> <span class="font-bold">Mekar Web</span></a>
+      </p>
+    </div>
+    <br />
+    <br />
+  </footer>
+</html>

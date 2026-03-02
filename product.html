@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product | Agricultural Products Supplier</title>
+
+    <meta
+      name="description"
+      content="Our products are handled under controlled post-harvest processes and prepared in accordance with common export standards, making them suitable for wholesalers, distributors, and food industries worldwide."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body class="font-[Poppins]">
+    <header
+      class="fixed md:static top-0 left-0 w-full z-50 transition-shadow duration-300 py-2"
+    >
+      <!-- NAVBAR WRAPPER -->
+      <div
+        id="navbar"
+        class="md:static fixed top-0 w-full z-50 transition-all duration-300"
+      >
+        <nav
+          class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20 shadow-lg backdrop-blur-md md:rounded-full"
+        >
+          <!-- LOGO -->
+          <img class="w-[25vh]" src="assets/logo.png" alt="Logo" />
+
+          <!-- MENU DESKTOP -->
+          <ul
+            class="hidden md:flex items-center gap-10 text-gray-900 font-medium rounded-full"
+          >
+            <li>
+              <a href="index.html" class="hover:text-[#177015]"> Home </a>
+            </li>
+            <li><a href="about.html" class="hover:text-[#177015]">About</a></li>
+            <li>
+              <a
+                href="product.html"
+                class="text-[#00bf1a] font-bold hover:text-gray-900 transition"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-[#177015]">Contact</a>
+            </li>
+          </ul>
+
+          <!-- RIGHT -->
+          <div class="flex items-center gap-5">
+            <button
+              class="hidden md:block bg-[#177015] text-white px-5 py-2 rounded-full hover:bg-[#2c9943] transition"
+            >
+              Get Started
+            </button>
+
+            <!-- HAMBURGER -->
+            <ion-icon
+              id="menuBtn"
+              name="menu"
+              class="text-3xl cursor-pointer md:hidden"
+            ></ion-icon>
+          </div>
+        </nav>
+
+        <!-- MENU MOBILE -->
+        <div
+          id="mobileMenu"
+          class="md:hidden absolute top-17 w-full bg-white/90 shadow-lg opacity-0 invisible -translate-y-3 transition-all duration-300"
+        >
+          <ul class="flex flex-col gap-6 px-6 py-6 text-gray-700 font-medium">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <button
+              class="mt-4 bg-[#177015] text-white px-5 py-2 rounded-full hover:bg-[#2c9943]"
+            >
+              Get Started
+            </button>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-5 mt-[20vh] md:mt-20">
+      <h2 class="text-5xl font-bold text-black text-center md:text-start mb-8">
+        Our Products
+      </h2>
+      <p class="text-center md:text-start">
+        Our products are handled under controlled post-harvest processes and
+        prepared in accordance with common export standards, making them
+        suitable for wholesalers, distributors, and food industries worldwide.
+      </p>
+    </div>
+    <br />
+
+    <section class="max-w-7xl mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+        <!-- KIRI – Konten Utama -->
+        <div
+          class="md:col-span-2 bg-white rounded-2xl shadow-lg overflow-hidden"
+        >
+          <!-- Potatoes -->
+          <div id="potatoes" class="py-10 px-5 bg-white">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10">
+              1. Fresh Potatoes
+            </h2>
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+              <div class="w-full aspect-[4/2.5]">
+                <img
+                  id="mainImagePotatoes"
+                  src="assets/kentang2.jpg"
+                  class="w-full h-full object-cover"
+                  alt="Fresh Potatoes"
+                />
+              </div>
+            </div>
+
+            <!-- Thumbnail -->
+            <div class="grid grid-cols-4 gap-4 mt-5">
+              <img
+                src="assets/kentang4.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImagePotatoes"
+              />
+              <img
+                src="assets/kentang5.jpeg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImagePotatoes"
+              />
+              <img
+                src="assets/kentang6.jpeg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImagePotatoes"
+              />
+              <img
+                src="assets/kentang2.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImagePotatoes"
+              />
+            </div>
+
+            <div class="py-10">
+              <p class="text-gray-800 leading-relaxed text-lg">
+                <span class="font-bold text-xl">Product Name :</span> Fresh
+                Potatoes (Export Grade)
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">Product Description</h2>
+
+              <p class="text-gray-600 leading-relaxed text-lg mt-2">
+                Our export-grade fresh potatoes are grown in Indonesia’s fertile
+                highland regions, known for producing potatoes with firm
+                texture, uniform shape, and stable shelf life. Each batch is
+                carefully sorted and packed to meet international buyer
+                requirements.
+              </p>
+
+              <h2 class="font-bold text-xl mt-8 mb-4">
+                Technical Specifications
+              </h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Varieties : Granola</p>
+                <p>• Origin : Dieng Plateau, Indonesia</p>
+
+                <p>• <span class="font-medium">Size Graded </span> :</p>
+                <p class="px-3">
+                  A. (Big) 3–4 pcs/kg <br />
+                  B. (Medium) 7–8 pcs/kg <br />
+                  C. (Small) 11–12 pcs/kg mm <br />
+                </p>
+                <p class="px-3 font-semibold">(custom grading available)</p>
+                <!-- Size Graded -->
+                <p>• Skin Color : Light brown to yellow</p>
+                <p>• Flesh : Firm, low moisture loss</p>
+                <p>• Defects : Max. 3%</p>
+                <p>• Moisture : Natural, well-cured</p>
+                <p>• Shelf Life : 2–3 months (cold storage)</p>
+              </div>
+
+              <h2 class="font-bold text-xl mt-8 mb-4">Application</h2>
+
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Fresh retail and wholesale markets</p>
+                <p>• Food service and hospitality</p>
+                <p>• Processing industries (fries, chips)</p>
+              </div>
+
+              <h2 class="font-bold text-xl mt-8 mb-4">Packaging & Loading</h2>
+
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• PP or mesh bags : 5 kg, 10 kg, 25 kg</p>
+                <p>• Carton boxes upon request</p>
+                <p>• Container loading : 20 FT / 40 FT reefer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fresh Carrots -->
+          <div id="carrots" class="py-10 px-5 bg-gray-100">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10 mt-10">
+              2. Fresh Carrots
+            </h2>
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+              <div class="w-full aspect-[4/2.5]">
+                <img
+                  id="mainImageCarrots"
+                  src="assets/wortel3.jpg"
+                  class="w-full h-full object-cover"
+                  alt="Fresh Carrots"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4 mt-5">
+              <img
+                src="assets/wortel.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCarrots"
+              />
+              <img
+                src="assets/wortel2.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCarrots"
+              />
+              <img
+                src="assets/wortel4.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCarrots"
+              />
+              <img
+                src="assets/wortel3.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCarrots"
+              />
+            </div>
+
+            <div class="py-10">
+              <p class="text-gray-800 leading-relaxed text-lg">
+                <span class="font-bold text-xl">Product Name : </span>Fresh
+                Carrots (Export Grade)
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">Product Description</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">
+                Harvested at optimal maturity, our export-grade carrots feature
+                vibrant color, crisp texture, and consistent sizing. Strict
+                cleaning and sorting processes ensure premium quality suitable
+                for overseas shipment.
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">
+                Technical Specifications
+              </h2>
+
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Length : 15–22 cm</p>
+                <p>• Diameter : 2–4 cm</p>
+                <p>• Color : Bright orange</p>
+                <p>• Moisture Content : Natural</p>
+                <p>• Defects : Max. 3%</p>
+                <p>• Shelf Life : 4–6 weeks (cold storage)</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Applications</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Fresh market and supermarket chains</p>
+                <p>• Food processing and juice industries</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Packaging & Loading</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Plastic bags or cartons : 5 kg, 10 kg, 20 kg</p>
+                <p>• Palletized export packing available</p>
+                <p>• Reefer container shipment</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sweet Potatoes -->
+          <div id="sweetpotatoes" class="py-10 px-5 bg-white">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10 mt-10">
+              3. Sweet Potatoes
+            </h2>
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+              <div class="w-full aspect-[4/2.5]">
+                <img
+                  id="mainImageSweetpotatoes"
+                  src="assets/sweetpotatoes.jpg"
+                  class="w-full h-full object-cover"
+                  alt="Sweet Potatoes"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4 mt-5">
+              <img
+                src="assets/potatoes.jpeg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageSweetpotatoes"
+              />
+              <img
+                src="assets/ubimanis2.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageSweetpotatoes"
+              />
+              <img
+                src="assets/ubi3.jpeg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageSweetpotatoes"
+              />
+              <img
+                src="assets/sweetpotatoes.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageSweetpotatoes"
+              />
+            </div>
+
+            <div class="py-10">
+              <p class="text-gray-800 leading-relaxed text-lg">
+                <span class="font-bold text-xl">Product Name : </span>Sweet
+                Potatoes (Export Grade)
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">Product Description</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">
+                Our sweet potatoes are sourced from selected farms and processed
+                with care to preserve freshness, natural sweetness, and texture.
+                Suitable for fresh consumption and industrial use.
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">
+                Technical Specifications
+              </h2>
+
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Size : 150–400 g per piece</p>
+                <p>• Skin : Smooth, clean</p>
+                <p>
+                  • Flesh Color : White / Orange / Purple (subject to
+                  availability)
+                </p>
+                <p>• Moisture : Controlled</p>
+                <p>• Defects : Max. 5%</p>
+                <p>• Shelf Life : 2–3 months (ventilated storage)</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Applications</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Fresh consumption</p>
+                <p>• Food processing and snack industries</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Packaging & Loading</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Woven bags or cartons 10 kg, 20 kg</p>
+                <p>• Export-standard labeling</p>
+                <p>• Container shipment</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Whole Mature Coconut -->
+          <div id="coconut" class="py-10 px-5 bg-gray-100">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10 mt-10">
+              4. Whole Mature Coconut
+            </h2>
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+              <div class="w-full aspect-[4/2.5]">
+                <img
+                  id="mainImageCoconut"
+                  src="assets/kelapa2.jpg"
+                  class="w-full h-full object-cover"
+                  alt="Whole Mature Coconut"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4 mt-5">
+              <img
+                src="assets/kelapa.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCoconut"
+              />
+              <img
+                src="assets/kelapa3.jpeg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCoconut"
+              />
+              <img
+                src="assets/kelapa4.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCoconut"
+              />
+              <img
+                src="assets/kelapa2.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImageCoconut"
+              />
+            </div>
+
+            <div class="py-10">
+              <p class="text-gray-800 leading-relaxed text-lg">
+                <span class="font-bold text-xl">Product Name : </span>Whole
+                Mature Coconut (Export Grade)
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">Product Description</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">
+                Our whole peeled mature coconuts are carefully selected, fully
+                husked, and neatly trimmed to meet export market requirements.
+                Known for high oil content and long shelf life.
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">
+                Technical Specifications
+              </h2>
+
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Weight : 0.8–1.2 kg per piece</p>
+                <p>• Maturity : Fully mature (12 months)</p>
+                <p>• Husk : Fully removed</p>
+                <p>• Moisture Loss : Minimal</p>
+                <p>• Shelf Life : Up to 60 days (proper storage)</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Applications</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Coconut milk and oil processing</p>
+                <p>• Food and beverage industries</p>
+                <p>• Wholesale and export distribution</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Packaging & Loading</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Mesh bags : 10–15 pcs per bag</p>
+                <p>• Palletized export packing available</p>
+              </div>
+            </div>
+          </div>
+          <!--Palm Broomstick-->
+          <div id="palm" class="py-10 px-5 bg-white">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10 mt-10">
+              5. Palm Broomstick
+            </h2>
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+              <div class="w-full aspect-[4/2.5]">
+                <img
+                  id="mainImagePalm"
+                  src="assets/sapu.jpeg"
+                  class="w-full h-full object-cover"
+                  alt="Palm Broomstick atau Sapu Lidi"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4 mt-5">
+              <img
+                src="assets/sapu2.jpg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImagePalm"
+              />
+              <img
+                src="assets/sapu.jpeg"
+                class="thumb w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-blue-500 transition"
+                data-target="mainImagePalm"
+              />
+            </div>
+
+            <div class="py-10">
+              <p class="text-gray-800 leading-relaxed text-lg">
+                <span class="font-bold text-xl">Product Name : </span>Palm
+                Broomstick (Export Quality)
+              </p>
+              <h2 class="font-bold text-xl mt-8 mb-4">Product Description</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">
+                Our palm broomsticks are produced from selected palm midribs,
+                naturally sun-dried and carefully sorted to ensure strength,
+                flexibility, and uniformity for export markets.
+              </p>
+
+              <h2 class="font-bold text-xl mt-8 mb-4">
+                Technical Specifications
+              </h2>
+
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Length : 90–120 cm</p>
+                <p>• Diameter : 3–5 mm</p>
+                <p>• Moisture Content : < 15%</p>
+                <p>• Color : Natural yellowish</p>
+                <p>• Condition : Clean, mold-free</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Applications</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Traditional and industrial broom manufacturing</p>
+                <p>• Household and commercial cleaning tools</p>
+              </div>
+              <h2 class="font-bold text-xl mt-8 mb-4">Packaging & Loading</h2>
+              <div class="text-gray-900 text-lg space-y-2">
+                <p>• Bundled or compressed bales</p>
+                <p>• Suitable for 20 FT / 40 FT containers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KANAN – Sidebar Postingan Terkait -->
+        <aside class="bg-white rounded-2xl shadow-lg p-6 h-fit sticky top-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-5">Our Products</h3>
+
+          <div class="space-y-5">
+            <!-- Item -->
+            <a href="#potatoes" class="group flex items-start gap-4">
+              <img
+                src="assets/kentang2.jpg"
+                class="w-10 h-10 object-cover rounded-lg shadow"
+              />
+              <div>
+                <p
+                  class="font-semibold text-gray-800 group-hover:text-blue-600 transition"
+                >
+                  Fresh Potatoes
+                </p>
+                <span class="text-sm text-gray-500"
+                  >Our export-grade fresh potatoes..</span
+                >
+              </div>
+            </a>
+
+            <!-- Item -->
+            <a href="#carrots" class="group flex items-start gap-4">
+              <img
+                src="assets/wortel3.jpg"
+                class="w-10 h-10 object-cover rounded-lg shadow"
+              />
+              <div>
+                <p
+                  class="font-semibold text-gray-800 group-hover:text-blue-600 transition"
+                >
+                  Fresh Carrots
+                </p>
+                <span class="text-sm text-gray-500"
+                  >Harvested at optimal maturity..</span
+                >
+              </div>
+            </a>
+
+            <!-- Item -->
+            <a href="#sweetpotatoes" class="group flex items-start gap-4">
+              <img
+                src="assets/sweetpotatoes.jpg"
+                class="w-10 h-10 object-cover rounded-lg shadow"
+              />
+              <div>
+                <p
+                  class="font-semibold text-gray-800 group-hover:text-blue-600 transition"
+                >
+                  Sweet Potatoes
+                </p>
+                <span class="text-sm text-gray-500"
+                  >Our sweet potatoes are sourced..</span
+                >
+              </div>
+            </a>
+            <!-- Item -->
+            <a href="#coconut" class="group flex items-start gap-4">
+              <img
+                src="assets/kelapa2.jpg"
+                class="w-10 h-10 object-cover rounded-lg shadow"
+              />
+              <div>
+                <p
+                  class="font-semibold text-gray-800 group-hover:text-blue-600 transition"
+                >
+                  Whole Mature Coconut
+                </p>
+                <span class="text-sm text-gray-500"
+                  >Our whole peeled mature coconuts..</span
+                >
+              </div>
+            </a>
+            <!-- Item -->
+            <a href="#palm" class="group flex items-start gap-4">
+              <img
+                src="assets/sapu.jpeg"
+                class="w-10 h-10 object-cover rounded-lg shadow"
+              />
+              <div>
+                <p
+                  class="font-semibold text-gray-800 group-hover:text-blue-600 transition"
+                >
+                  Palm Broomstick
+                </p>
+                <span class="text-sm text-gray-500"
+                  >Our palm broomsticks are produced..
+                </span>
+              </div>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        const isOpen = !mobileMenu.classList.contains("opacity-0");
+
+        menuBtn.name = isOpen ? "menu" : "close";
+
+        mobileMenu.classList.toggle("opacity-0");
+        mobileMenu.classList.toggle("invisible");
+        mobileMenu.classList.toggle("-translate-y-3");
+      });
+    </script>
+    <!-- JS untuk ganti gambar -->
+    <script>
+      const thumbs = document.querySelectorAll(".thumb");
+
+      thumbs.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+          const targetId = thumb.dataset.target;
+          const mainImg = document.getElementById(targetId);
+          if (mainImg) {
+            mainImg.src = thumb.src;
+          }
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/6281316907299"
+    target="_blank"
+    aria-label="Contact us via WhatsApp"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-0 transition-all duration-300 hover:scale-105"
+  >
+    <!-- WhatsApp Button (lebih besar) -->
+    <span
+      class="flex items-center justify-center w-14 h-14 bg-green-600 rounded-full shadow-lg"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        fill="white"
+        class="w-10 h-10 sm:w-9 sm:h-9"
+      >
+        <path
+          d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333 0 2.347.64 4.64 1.853 6.64L2 30l7.56-2.453a13.267 13.267 0 0 0 6.44 1.653c7.36 0 13.333-5.973 13.333-13.333S23.36 2.667 16 2.667Zm0 24c-2.08 0-4.107-.533-5.893-1.56l-.427-.253-4.48 1.453 1.467-4.373-.28-.453A10.547 10.547 0 0 1 5.333 16C5.333 10.493 10.493 5.333 16 5.333S26.667 10.493 26.667 16 21.507 26.667 16 26.667Zm5.973-7.227c-.32-.16-1.893-.933-2.187-1.04-.293-.107-.507-.16-.72.16-.213.32-.827 1.04-1.013 1.253-.187.213-.373.24-.693.08-.32-.16-1.347-.493-2.56-1.573-.947-.84-1.587-1.88-1.773-2.2-.187-.32-.02-.493.14-.653.147-.147.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.733-.987-2.373-.26-.627-.52-.54-.72-.547h-.613c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.667 0 1.573 1.147 3.093 1.307 3.307.16.213 2.253 3.44 5.453 4.827.76.327 1.353.52 1.813.667.76.24 1.453.207 2 .127.613-.093 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373Z"
+        />
+      </svg>
+    </span>
+  </a>
+
+  <footer class="flex flex-col space-y-10 justify-center bg-gray-200 w-full">
+    <nav
+      class="flex justify-center flex-wrap gap-6 text-gray-900 font-medium mt-20"
+    >
+      <a class="hover:text-gray-900" href="index.html">Home</a>
+      <a class="hover:text-gray-900" href="about.html">About</a>
+      <a class="hover:text-gray-900" href="product.html">Product</a>
+
+      <a class="hover:text-gray-900" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="flex justify-center space-x-5">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png"
+        />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+      </a>
+    </div>
+    <div class="text-center text-gray-900 font-light">
+      <p class="text-sm">&copy; 2025 PT. TANI SUMBER MAKMUR</p>
+
+      <p class="text-sm">
+        All rights reservered by
+        <a href="mekarweb.com"> <span class="font-bold">Mekar Web</span></a>
+      </p>
+    </div>
+    <br />
+    <br />
+  </footer>
+</html>
